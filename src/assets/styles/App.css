@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+.app__container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif; }
+
+.app__modulebox {
+  height: 100%;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: -4px 0px 18px 0px rgba(96, 125, 139, 0.05); }
+  .app__modulebox::after {
+    content: ' ';
+    width: 420px; }
+
+.app__imagebox {
+  background-color: #ecf0f3;
+  overflow: auto;
+  width: calc(100% - 420px);
+  height: 100%; }
+
+.app__imagecontainer img {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto; }
+
+.selector {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 2px solid #ecf0f3; }
+
+.selector__button-icon {
+  border: none;
+  background-color: #7454cf;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 14px 10px 14px;
+  border-radius: 3px;
+  transition: opacity 300ms linear; }
+  .selector__button-icon:hover {
+    opacity: 0.75; }
+
+.selector__select {
+  background-image: url("../img/icon-dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: center right 16px;
+  background-color: #ecf0f3;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  border: none;
+  padding: 9px 8px;
+  border-radius: 3px;
+  margin-right: 16px;
+  color: #577489; }
+
+.modules {
+  height: 100%;
+  overflow: auto;
+  position: relative; }
+  .modules::after {
+    content: ' ';
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+    /* FF3.6-15 */
+    pointer-events: none; }
+
+.card {
+  font-size: 14px;
+  padding: 16px 16px;
+  border-bottom: 2px solid #ecf0f3;
+  display: flex;
+  align-items: center; }
+
+.card__details {
+  width: 100%; }
+
+.card__title {
+  font-size: 16px;
+  margin-bottom: 2px;
+  color: #321e6c;
+  font-weight: 500; }
+
+.card__desc {
+  color: #577489; }
+
+.card__button {
+  border: none;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 14px 10px 14px;
+  border-radius: 3px;
+  transition: background-color 300ms linear; }
+  .card__button:hover {
+    background-color: #ecf0f3; }
+
+.copybutton {
+  padding: 16px; }
+  .copybutton button {
+    border: none;
+    background-color: #7454cf;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 14px 10px 14px;
+    border-radius: 300px;
+    transition: opacity 300ms linear;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    box-shadow: 0px 1px 6px 0px rgba(116, 84, 207, 0.5); }
+    .copybutton button:hover {
+      opacity: 0.75; }
